@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
   const Category({
-    super.key,
+    Key? key,
     required this.text,
     required this.color,
     this.onTap,
-  });
+  }) : super(key: key);
 
   final String text;
   final Color color;
