@@ -12,7 +12,7 @@ import 'package:kotoba/main.dart';
 void main() {
   testWidgets('Kotoba app smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const kotoba());
+    await tester.pumpWidget(const Kotoba());
 
     // Verify that the app title is displayed.
     expect(find.text('Kotoba'), findsOneWidget);
@@ -27,7 +27,7 @@ void main() {
 
   testWidgets('Numbers category navigation test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const kotoba());
+    await tester.pumpWidget(const Kotoba());
 
     // Find and tap the Numbers category.
     await tester.tap(find.text('Numbers'));
